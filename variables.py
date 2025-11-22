@@ -1,23 +1,24 @@
-import tkinter as tk 
-ventana = tk.Tk()
-ventana.title("ejemplo boton")
-ventana.geometry("400x500")
-ventana.configure(bg='lightblue')
+ #entrada de datos 
 
-etiqueta = tk.Label(ventana, text='hola soy un label')
-etiqueta.pack()
+"""(para introducir datos a un programa desde el teclado para
+ que el usuario interactue con el programa)"""
 
-boton = tk.Button(ventana, text='presiona aqui')
-boton.pack()
-
-def cambiar_testo():
-	print("!boton presionado")
-
-
-boton.config(command=cambiar_testo)
+# para cadena de testos o String
+palabra= input("ingrese una frase ")
+print(palabra)
 
 
 
 
-ventana.mainloop()
-cambiar_testo()
+#para numeros enteros
+nun_uno= int(input("ingrese el primer valor "))
+nun_dos= int(input("ingrese el segundo valor "))
+res=nun_uno+nun_dos
+print("El resultado es :", res)
+
+
+#para numeros decimales o reales
+var_uno=float(input("Ingrese un valor decimal "))
+var_dos=float(input("Ingrese un segundo valor decimal "))
+resultado=var_uno+var_dos
+print("el resultado es :", resultado)
